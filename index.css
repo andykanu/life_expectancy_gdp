@@ -27,3 +27,18 @@ nav li {
   height: 48px;
   flex: end;
 }
+
+main {
+  margin-left: 10%;
+  max-width: 70%;
+}
+
+.bar_chart,
+.violin_plot {
+  margin: 0 auto;
+  display: block;
+}
+
+p {
+  margin-bottom: 24px;
+}

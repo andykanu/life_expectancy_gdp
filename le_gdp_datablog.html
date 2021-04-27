@@ -5,14 +5,6 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <!--
-BAR CHARTS 
-What do you notice about the two bar charts? Do they look similar?
-
-#Little correlation between GDP and life expectancy. 
-Zimbabwe bottom of both but it's notable that the four other countries have similar LEABY to US despite inferior GDP.
-
-VIOLIN PLOT 
-xWhat do you notice about this distribution? Which country's life expactancy has changed the most?
 
 SEABORN CHARTS
     What are your first impressions looking at the visualized data?
@@ -78,5 +70,123 @@ When authoring your blog post, here are a few guiding questions to guide your re
         />
       </nav>
     </header>
+    <main>
+      <h1>Life Expectancy & GDP</h1>
+      <h2>Initial findings</h2>
+      <h3>GDP</h3>
+      <p>
+        GDP by country follows expected economic lines, with the US out in
+        front, followed by China, the world's second-largest economy. Germany,
+        Europe's largest economy comes next. Mexico, which has benefited from
+        the relocation of several US industries remains ahead of Chile, which
+        <a href="https://en.wikipedia.org/wiki/Economy_of_Chile" target="_blank"
+          >is one of the leading economies of South America.</a
+        >
+        Zimbabwe, which went through economic convulsions in the early 2000s,
+        achieving an
+        <a
+          href="https://en.wikipedia.org/wiki/Economy_of_Zimbabwe"
+          target="_blank"
+          >unemployment rate of 94% in 2008</a
+        >, unsurprisingly fares worst of the countries studied.
+      </p>
+      <img
+        class="bar_chart"
+        src="images/gdp_by_country.png"
+        alt="GDP by country"
+      />
+      <h3>Life expectancy</h3>
+      <!-- Section on life expectancy bar chart-->
+      <p>
+        The relationship between GDP and life-expectancy is low, with Germany
+        and Chile having the highest life-expectancy, but all countries apart
+        from Zimbabwe have similar life expectancies. Zimbabwe's relatively poor
+        performance can be attributed in part
+        <a
+          href="https://www.who.int/workforcealliance/countries/zwe/en/"
+          target="_blank"
+          >to the wider economic malaise, which has led to under-investment in
+          healthcare infrastructure</a
+        >
+        and the loss of trained staff from the sector.
+      </p>
+      <img
+        class="bar_chart"
+        src="images/gdp_leaby_by_country.png"
+        alt="GDP by Year"
+      />
+      <!--Section on life expectancy violin plot-->
+      <p>
+        Looking more closely at the spread of life expectancy, we can see that
+        in all countries, apart from Zimbabwe, life expectancy has been
+        reasonably stable. China has also seen a more dramatic change than other
+        economies, which may be linked to China's growing middle class and
+        economic development.<br /><br />
+        In Zimbabwe, the years studied have seen unprecedented challenges for
+        the economy, with the first decade of the new millennium having seen the
+        onset of the
+        <a
+          href="https://www.researchgate.net/publication/320036241_In_Search_of_Development_Zimbabwe_Examplar_2000_to_2015"
+          target="_blank"
+          >'Zimbabwe Crisis'</a
+        >, a confluence of botched land reform, economic mismanagement and
+        hyperinflation, which reached 271 million percent between 2007 and 2008.
+        The already small, ill-functioning economy shrunk by 30% between 2000
+        and 2010. Over 2 million jobs were lost in the periods studied. Along
+        with these economic factors, Zimbabwe has been hard hit by AIDS, with
+        <a href="https://www.who.int/hiv/HIVCP_ZWE.pdf" target="_blank"
+          >roughly a quarter of the adult population</a
+        >
+        believed to have HIV/AIDS in 2003. In 2005, only 23,000 of an estimated
+        321,000 people in need, were receiving treatment for HIV/AIDS. Following
+        this devastation, real progress has been made more recently in health
+        outcomes, which have led to great improvements in life expectancy.
+      </p>
+      <img
+        class="violin_plot"
+        src="images/LEABY_violin.png"
+        alt="life expectancy distribution violin plot"
+      />
+      <!--More details section-->
+      <h2>Tracking changes by year</h2>
+      <h3>GDP</h3>
+      <p>
+        The key trend of the years 2000 to 2015 was the economc rise of China.
+        China's economic output was smaller than that of Germany at the turn of
+        the millennium, since when it has accelerated industrialization and
+        development to race into the position of second-largest global economy.
+        The US economy has also grown significantly in this time, but not at the
+        same rate as China's. China is expected to overtake the US in the coming
+        decades.
+      </p>
+      <img class="seaborn_bar" src="images/GDP-by_year.png" alt="GDP by year" />
+      <h3>Life expectancy</h3>
+      <p>
+        In all countries other than Zimbabwe, life expectancy grew modestly
+        across the period studied. In Zimbabwe, life expectancy fell during the
+        'Zimbabwe crisis' of the early 2000s. Zimbabwe had the dubious honour of
+        having the
+        <a
+          href="https://www.cgdev.org/blog/zimbabweans-have-shortest-life-expectancy"
+          target="_blank"
+          >world's shortest life expectancy</a
+        >
+        in 2006, before recovering dramatically, albeit still lagging behind
+        every other country in this study. This increase in life expectancy
+        <a
+          href="https://www.researchgate.net/publication/297750732_Life_Expectancy_In_Zimbabwe_An_Analysis_Of_Five_Decades"
+          target="_blank"
+          >has been associated with</a
+        >
+        the formation of a government of national unity, which began addressing
+        and reversing some of the structural failings of the Zimbabwean economy.
+      </p>
+      <img
+        class="seaborn_bar"
+        src="images/LEABY_by_year.png"
+        alt="Life expectancy by country by year"
+      />
+      <!--Facetgrid section-->
+    </main>
   </body>
 </html>
