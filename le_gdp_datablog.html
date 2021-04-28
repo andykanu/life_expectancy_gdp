@@ -4,57 +4,6 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
-  <!--
-
-SEABORN CHARTS
-    What are your first impressions looking at the visualized data?
-
-    Which countries' bars changes the most?
-    What years are there the biggest changes in the data?
-    Which country has had the least change in GDP over time?
-    How do countries compare to one another?
-    Now that you can see the both bar charts, what do you think about the relationship between GDP and life expectancy?
-    Can you think of any reasons that the data looks like this for particular countries?
-
-FACETGRID GDP
-
-    Which country moves the most along the X axis over the years?
-    Which country moves the most along the Y axis over the years?
-    Is this surprising?
-    Do you think these scatter plots are easy to read? Maybe there's a way to plot that!
-
-    FACETGRID LEABY
-    What are your first impressions looking at the visualized data?
-
-    Which countries' line changes the most?
-    What years are there the biggest changes in the data?
-    Which country has had the least change in life expectancy over time?
-    Can you think of any reasons that the data looks like this for particular countries?
-
-Q.s which countries have highest and lowest GDP?
-Q.s which countries have highest and lowest LEABY?
-
-Based on the visualization, choose one part the data to research a little further so you can add some real world context to the visualization. You can choose anything you like, or use the example question below.
-
-What happened in China between in the past 10 years that increased the GDP so drastically?
-Use the content you have created in this Jupyter notebook to create a blog post reflecting on this data. Include the following visuals in your blogpost:
-
-    The violin plot of the life expectancy distribution by country
-    The facet grid of scatter graphs mapping GDP as a function Life Expectancy by country
-    The facet grid of line graphs mapping GDP by country
-    The facet grid of line graphs mapping Life Expectancy by country
-
-We encourage you to spend some time customizing the color and style of your plots! Remember to use plt.savefig("filename.png") to save your figures as a .png file.
-
-When authoring your blog post, here are a few guiding questions to guide your research and writing:
-
-    How do you think the histories and the cultural values of each country relate to its GDP and life expectancy?
-    What would have helped make the project data more reliable? What were the limitations of the dataset?
-    Which graphs better illustrate different relationships??
-
-
-
-  -->
   <body>
     <header>
       <nav>
@@ -70,8 +19,12 @@ When authoring your blog post, here are a few guiding questions to guide your re
         />
       </nav>
     </header>
-    <main>
+    
       <h1>Life Expectancy & GDP</h1>
+      <p class="caption">Image from NASA</p>
+      <main>
+      <h2>Introduction</h2>
+      <p>Reviewing data for an economy from each major region, tracking life expectancy and GDP, could we say whether there was a strong association between life expectancy and GDP? The countries reviewed were: <ul><li>United States</li><li>China</li><li>Mexico</li><li>Germany</li><li>Zimbabwe</li></ul></p>
       <h2>Initial findings</h2>
       <h3>GDP</h3>
       <p>
@@ -159,7 +112,23 @@ When authoring your blog post, here are a few guiding questions to guide your re
         same rate as China's. China is expected to overtake the US in the coming
         decades.
       </p>
-      <img class="seaborn_bar" src="images/GDP-by_year.png" alt="GDP by year" />
+      <div class="row">
+        <div class="column">
+          <img
+            class="seaborn_bar"
+            src="images/GDP-by_year.png"
+            alt="GDP by year"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="facet_line"
+            src="images/GDP_line_facetgrid.png"
+            alt="GDP
+          broken out by country by year"
+          />
+        </div>
+      </div>
       <h3>Life expectancy</h3>
       <p>
         In all countries other than Zimbabwe, life expectancy grew modestly
@@ -181,12 +150,41 @@ When authoring your blog post, here are a few guiding questions to guide your re
         the formation of a government of national unity, which began addressing
         and reversing some of the structural failings of the Zimbabwean economy.
       </p>
+      <div class="row">
+        <div class="column">
+          <img
+            class="seaborn_bar"
+            src="images/LEABY_by_year.png"
+            alt="Life expectancy by country by year"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="facet_line"
+            src="images/LEABY_facetgrid2.png"
+            alt="line graph by country - life expectancy"
+          />
+        </div>
+      </div>
+      <!--Facetgrid
+        section-->
+
+      <h3>Trends</h3>
+      <p>
+        Looking more closely at the data, year by year, we can see the dramatic
+        improvement in Zimbabwe's life expectancy in the latter half of the
+        period studied. China's dramatic rise through the ranks of GDP can also
+        be seen as it emerges from the cluster of smaller economies to track
+        closer to the US across the years.
+      </p>
       <img
-        class="seaborn_bar"
-        src="images/LEABY_by_year.png"
-        alt="Life expectancy by country by year"
+        class="facetgrid"
+        src="images/LEABY_facetgrid.png"
+        alt="scatter
+      plot year by year GDP"
       />
-      <!--Facetgrid section-->
+      <h3>Conclusion</h3>
+      <p>While life-expectancy increased in all of the economies studied across the first fifteen years of the millennium, the change in life expectancy in Zimbabwe was an outlier. Zimbabwe's GDP remains flat across the period, but it went through a reduction followed by dramatic increase in life-expectancy. Overall, while we can say that there is some association between life expectancy and GDP in functioning economies, this relationship was broken in the Zimbabwe Crisis, as the country went through economic and developmental catastrophe, becoming close to a failed state. As governance became more stable, while overall GDP did not increase dramatically, the health outcomes of citizens and life expectancy were transformed. </p>
     </main>
   </body>
 </html>

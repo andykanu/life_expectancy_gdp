@@ -21,6 +21,7 @@ nav li {
   padding: 16px;
   height: 16px;
   margin-left: 2px;
+  flex: start;
 }
 
 .logo {
@@ -32,13 +33,50 @@ main {
   margin-left: 10%;
   max-width: 70%;
 }
-
+h1 {
+  background: url("images/BlackMarble_2016_01deg.jpg");
+  background-size: cover;
+  height: 300px;
+  color: #528080;
+  text-align: center;
+  line-height: 300px;
+  margin-bottom: 0;
+}
 .bar_chart,
 .violin_plot {
   margin: 0 auto;
   display: block;
 }
 
+.seaborn_bar,
+.facet_line {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  width: 50%;
+  padding: 5px;
+}
+
 p {
   margin-bottom: 24px;
+}
+
+h2 {
+  color: #528080;
+  margin-top: 24px;
+}
+h3 {
+  color: #528080;
+}
+
+.caption {
+  float: right;
+  font-size: 8px;
+  margin-top: 0;
 }
